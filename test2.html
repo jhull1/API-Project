@@ -6,17 +6,17 @@
         <title>Coffee Finder</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="index.js"></script>
-<script src="styles.css"></script>
+<link rel="stylesheet" type="text/css" href= "styles.css">
     </head>
 <body>
 <div class="title"><h1>Open Coffeeshops Near Me</h1></div>
-<div class= "searchBar"style="height: 40px; width: 100%;">
+<div class= "searchBar">
     <strong>Address:</strong>
     <input type="text" name="address" id="address" value="San Diego, CA">
     <input type="button" value="Find Coffee!" id="submit" onclick="renderMap();">
 </div>
-    <div id="map" style="width:48%; height:600px; display: inline-block; vertical-align: top;"></div>
-    <div id="list" style="width:48%; height:600px; display: inline-block;"></div>
+    <div class = "map" id="map"></div>
+    <div class="list"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TDPeJm9GhLN1NNMsPp9nOyQbNiCH7QY&libraries=places&callback=initialize" async defer></script>
 

@@ -60,7 +60,7 @@
             for (var i = 0; i < results.length; i++)
             {
                 createMarker(results[i], results[i].icon);
-                $('#list').append(`
+                $('.list').append(`
                     <h3 onclick="showMarker(${i})"
 
                     >${results[i].name}</h3>

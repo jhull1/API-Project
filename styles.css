@@ -1,10 +1,9 @@
-#searchBar {
+.searchBar {
 	height: 40px; 
 	width: 100%;
-	color: red;
 }
 
-#map {
+.map {
 	width:48%; 
 	height:600px; 
 	display: inline-block; 
@@ -15,4 +14,5 @@
 	width:50%; 
 	height:600px;
 	display: inline-block;
+	vertical-align: top;
 }
