@@ -62,15 +62,19 @@
             for (var i = 0; i < results.length; i++)
             {
                 createMarker(results[i], results[i].icon);
-                createList(results[i], results[i].name);
+                //createList(results[i], results[i].name);
+                $('#list').append(`
+                    <h3 onclick="showMarker(${i})"
+
+                    >${results[i].name}</h3>
+                    <p>${results[i].vicinity}</p>`)
             }
-            console.log(storeList);
-            $('#list').html(`<ul>${storeList}</ul>`);
             }
+
         }
     var newArray = [];
     var newArray = new Array();
-
+var markers =[];
     function createMarker(place, icon) {
         var placeLoc = place.geometry.location;
 
@@ -83,31 +87,29 @@
             },
             animation: google.maps.Animation.DROP
         });
-        
+       
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.setContent(place.name+ '<br>' +place.vicinity);
             infowindow.open(map, this);
         });
+         markers.push(marker);
     }
 
-    var storeList = [];
-    function createList(place,name){
-        var store = place.name;
-        storeList.push(store);
-    return storeList;
-}
-
+function showMarker (index){
+       console.log(markers);
+         google.maps.event.trigger(markers[index], 'click');
+            }
     </script>
 </head>
 <body>
-<div id ="title"><h1>Open Coffeeshops Near Me</h1></div>
-<div style="height: 40px; width: 100%;">
+<div class="title"><h1>Open Coffeeshops Near Me</h1></div>
+<div class= "searchBar"style="height: 40px; width: 100%;">
     <strong>Address:</strong>
     <input type="text" name="address" id="address" value="San Diego, CA">
     <input type="button" value="Find Coffee!" id="submit" onclick="renderMap();">
 </div>
-    <div id="map" style="width:50%; height:600px;"></div>
-    <div id="list" style="width:50%; height:600px;"></div>
+    <div id="map" style="width:48%; height:600px; display: inline-block; vertical-align: top;"></div>
+    <div id="list" style="width:48%; height:600px; display: inline-block;"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TDPeJm9GhLN1NNMsPp9nOyQbNiCH7QY&libraries=places&callback=initialize" async defer></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

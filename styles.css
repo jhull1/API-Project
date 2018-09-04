@@ -1,0 +1,14 @@
+.searchBar {
+	height: 40px; 
+	width: 100%;
+}
+
+.map {
+	width:50%; 
+	height:600px;
+}
+
+.list {
+	width:50%; 
+	height:600px;
+}
