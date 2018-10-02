@@ -1,0 +1,80 @@
+
+      body { 
+        background-color:  #331900; 
+        font-family: 'K2D', sans-serif;
+      }
+      
+      .searchBar {
+        height: 40px; 
+        width: 100%;
+        color: orange;
+        border-radius: 25%;
+        margin:10px;
+      }
+      .button {
+         background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 50%;
+      }
+
+      .title {
+        text-align: right;
+        color: orange;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        padding:0 10px;
+        background-image: url("cup.jpg");
+       background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+      }
+      .title h3 {
+        color: white;
+      }
+      .title h1 {
+        font-size: 50px;
+      }
+      
+      .map {
+        width:48%; 
+        height:600px; 
+        display: inline-block; 
+        vertical-align: top;
+      }
+      
+      .map h1 {
+      }
+      
+      .list {
+        color: orange;
+        font-size: 12px;
+        width:50%; 
+        height:600px;
+        display: inline-block;
+        float: right;
+        vertical-align: top;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .list li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .list p {
+        color: white;
+        font-size: 14px;
+        
+        .list span {
+          color: tan;
+        }
+      }
