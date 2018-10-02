@@ -65,7 +65,9 @@
         padding: 0;
         list-style: none;
       }
-      
+      .hidden {
+        display: none;
+      }
       .list li {
         margin: 0;
         padding: 0;

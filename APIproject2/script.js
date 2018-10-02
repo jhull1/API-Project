@@ -26,6 +26,7 @@ let infowindow
       }
      
       function renderMap() {
+        $('.message').addClass("hidden");
         const address = $(autocompleteElement).val();
         let selLocLat;
         let selLocLng;
