@@ -89,11 +89,11 @@ let infowindow
         let today = new Date().getDay()
         let opening_hours = result.opening_hours
         if (opening_hours && opening_hours.weekday_text && opening_hours.weekday_text[today - 1]) {
-          hours = '<br />' + result.opening_hours.weekday_text[today - 1]
+          hours = '<br /><span>' + result.opening_hours.weekday_text[today - 1] +'</span>'
         }
         return `
           <h1 data-id="${result.place_id}">${result.name}</h1>
-          <p>${result.vicinity}<span>${hours}</span></p>
+          <p>${result.vicinity}${hours}</p>
         `
       }
 

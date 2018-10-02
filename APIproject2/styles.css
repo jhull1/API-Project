@@ -10,6 +10,7 @@
         color: orange;
         border-radius: 25%;
         margin:10px;
+        text-align: center;
       }
       .button {
          background-color: orange;
@@ -73,8 +74,8 @@
       .list p {
         color: white;
         font-size: 14px;
-        
+      }
         .list span {
           color: tan;
         }
-      }
+      
