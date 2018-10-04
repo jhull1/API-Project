@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -8,15 +8,17 @@
      
   </head>
   <body>
-<div class="title"><h1>Need Coffee?</h1>
+<header role ="banner" class="title"><h1>Need Coffee?</h1>
 <h3>Enter your whereabouts below.</h3>
-</div>
-<div class= "searchBar">
+</header>
+<section role="region" class= "searchBar">
     <strong>Address:</strong>
     <input type="text" name="address" id="address" value="San Diego, CA">
     <input type="button" class="button" value="Find Coffee!" id="submit">
-</div>
+</section>
+<main role="main">
     <div class="map" id="map"></div>
     <ul class="list"><h1 class="message">Enter an address above to find a coffeeshop open now.</h1></ul>
+    </main>
 </body>
 </html>
