@@ -79,9 +79,11 @@ let infowindow
               
             }.bind(null, result));
           }
-          $('.list h1').on('click', function (e) {
+           $('.list').on('click', 'h1', function (e) {
             const id = e.currentTarget.getAttribute('data-id')
-            showMarker(id)
+            showMarker(id);
+            document.querySelector('.map').scrollIntoView();
+
           })
       }
       
