@@ -5,7 +5,8 @@
       }
       
       .searchBar {
-        height: 40px; 
+        height: 40px;
+        font-size: 30px; 
         width: 100%;
         color: orange;
         border-radius: 25%;
@@ -44,19 +45,16 @@
       }
       
       .map {
-        width:48%; 
+        width:75%; 
         height:600px; 
         display: inline-block; 
         vertical-align: top;
       }
       
-      .map h1 {
-      }
-      
       .list {
         color: orange;
         font-size: 12px;
-        width:50%; 
+       // width:50%; 
         height:600px;
         display: inline-block;
         float: right;
@@ -80,4 +78,20 @@
         .list span {
           color: tan;
         }
-      
+
+/* Mobile defaults */
+.map, .list {
+  width: 100%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  .map {
+    width:70%; 
+  }
+
+  .list {
+    width:25%;
+  }
+}
+     
